@@ -51,7 +51,7 @@ while tty:
     #water
     col = Image.open('water.png', 'r')
     colorW = list(col.getdata())
-    if colorW == [(246, 246, 246)]:
+    if colorW != [(246, 246, 246)]:
         pyautogui.press('i')
         # pyautogui.moveTo(885, 604, 1)
         water = pyautogui.locateCenterOnScreen('waterIcon.png')
